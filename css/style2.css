@@ -6,19 +6,66 @@
 figure img {
     width: 100%;
     height: auto;
+    border-radius: 80%;
 }
 figure figcaption {
     font-weight: bold;
     font-family: Comic Sans MS;
     text-align: center; 
     color: beige;
+    animation-name: anim3;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
 }
 header {
     text-align: center;
     font-family: Comic Sans MS;
     padding: 20px 20px;
-    background-color: hotpink;
+    background-color: rgb(224, 223, 223);
+    animation-name: anim2;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    color: rgb(88, 88, 88);
+
 } 
 body {
-    background-color: slateblue;
+    background-color: rgb(88, 88, 88);
+    animation-name: anim1;
+   
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes anim1{
+    from{
+   background-color: rgb(88, 88, 88);
+  
+    }
+    to{
+        background-color: rgb(224, 223, 223);
+       
+    }
+}
+@keyframes anim3{
+    from{
+   color: beige;
+    }
+    to{
+        color: rgb(53, 53, 53);
+    }
+}
+@keyframes anim2{
+    from{
+        background-color: rgb(224, 223, 223);
+        color: rgb(88, 88, 88);
+    }
+    to{
+        background-color: rgb(88, 88, 88);
+        color: white;
+    }
 }
